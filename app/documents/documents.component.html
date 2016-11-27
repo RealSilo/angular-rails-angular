@@ -1,0 +1,15 @@
+ <div class="container"> 
+  <h1 class="headline">{{ pageTitle }}</h1>
+
+  <div class="card" *ngFor="let doc of documents">
+    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Mistakes-to-avoid-when-hiring-freelancers.jpg" alt="Card image cap" width="300px">
+    <div class="card-block">
+
+      <h4 class="card-title">{{ doc.title }}</h4>
+      <p class="card-text">{{ doc.description }}</p>
+      <a class="btn btn-lg btn-primary" href="{{doc.file_url}}">Download file</a>
+      <p class="card-text"><small class="text-muted">{{ doc.upated_at }}</small></p>
+      <p>{{ doc.image_url }}</p>
+    </div> 
+  </div>
+</div>
