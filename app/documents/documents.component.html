@@ -6,10 +6,9 @@
     <div class="card-block">
 
       <h4 class="card-title">{{ doc.title }}</h4>
+      <p class="card-text">Last updated: <small class="text-muted">{{ doc.updated_at | date }}</small></p>
       <p class="card-text">{{ doc.description }}</p>
       <a class="btn btn-lg btn-primary" href="{{doc.file_url}}">Download file</a>
-      <p class="card-text"><small class="text-muted">{{ doc.upated_at }}</small></p>
-      <p>{{ doc.image_url }}</p>
     </div> 
   </div>
 </div>
